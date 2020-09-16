@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(int argc, char** argv) {
- cout<<"Hello DROG"<<endl;	
+ cout<<"Hello mazafaka"<<endl;	
  
 	system("pause");
 	return 0;
