@@ -31,9 +31,7 @@ switch (cmd)
 		break;
 	}	
 		
-	}
- 
- 
+	} 
 	system("pause");
 	return 0;
 }
