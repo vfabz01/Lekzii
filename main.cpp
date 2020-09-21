@@ -18,7 +18,6 @@ switch (cmd)
 		return 0;
 		break;
 }
-		
 	case 1:{
 		for(int i;i<4;i++)
 		cout<<mass[4];
@@ -26,12 +25,12 @@ switch (cmd)
 		break;
 	}
 	case 2:{
-		
 		break;
 	}
 	case 3:{
 		break;
 	}	
+		
 	}
  
  
