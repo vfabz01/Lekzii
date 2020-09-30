@@ -1,22 +1,23 @@
-# Project: Project1
-# Makefile created by Dev-C++ 5.11
+# Project: test_OOP_1
+# Makefile created by Dev-C++ 5.4.2
 
-CPP      = g++.exe -D__DEBUG__
-CC       = gcc.exe -D__DEBUG__
+CPP      = g++.exe
+CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o
-LINKOBJ  = main.o
-LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
-INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
-CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = Project1.exe
-CXXFLAGS = $(CXXINCS) -g3
-CFLAGS   = $(INCS) -g3
-RM       = rm.exe -f
+OBJ      = main.o Foo1.o Foo2.o Foo3.o Foo4.o
+LINKOBJ  = main.o Foo1.o Foo2.o Foo3.o Foo4.o
+LIBS     = -L"D:/Programs/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Programs/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"D:/Programs/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = test_OOP_1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
 all: all-before $(BIN) all-after
+
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
@@ -26,3 +27,15 @@ $(BIN): $(OBJ)
 
 main.o: main.cpp
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Foo1.o: Foo1.cpp
+	$(CPP) -c Foo1.cpp -o Foo1.o $(CXXFLAGS)
+
+Foo2.o: Foo2.cpp
+	$(CPP) -c Foo2.cpp -o Foo2.o $(CXXFLAGS)
+
+Foo3.o: Foo3.cpp
+	$(CPP) -c Foo3.cpp -o Foo3.o $(CXXFLAGS)
+
+Foo4.o: Foo4.cpp
+	$(CPP) -c Foo4.cpp -o Foo4.o $(CXXFLAGS)
