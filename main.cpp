@@ -11,7 +11,7 @@ void Foo1(int *arr);			//increase by 1
 void Foo2(int *arr);			//swap the elements of arr
 void Foo3(int *arr);			//print revert
 void Foo4(int *arr);			//min value
-
+void Foo5(int *arr);			//puzirek
 
 
 int main()
@@ -62,6 +62,10 @@ int main()
 		
 		case 6:
 			Foo4(arr);
+		break;
+		
+		case 7:
+			Foo5(arr);
 		break;
 		
 		case 0:
